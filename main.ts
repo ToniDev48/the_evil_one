@@ -18,10 +18,10 @@ basic.showLeds(`
     . . # . .
     `)
 basic.forever(function () {
-    if (scorePlayer1 == 100) {
+    if (scorePlayer1 == 100 || scorePlayer1 > 100) {
         basic.showString("Player1 won!")
     }
-    if (scorePlayer2 == 100) {
+    if (scorePlayer2 == 100 || scorePlayer2 > 100) {
         basic.showString("Player2 won!")
     }
 })
